@@ -19,10 +19,6 @@ A web-based application to manage student teams, built using Java, JDBC, and MyS
 - Java Swing (for GUI)
 - NetBeans IDE (recommended)
 
-## 🖼️ Screenshots
-
-> _Include screenshots here of the login page, dashboard, student list, team assignment, etc._
-
 ## 📦 Setup and Installation
 
 ### Prerequisites
@@ -77,5 +73,5 @@ Student-Team-Members-Management-Application/
 3. ISHAN DEY
 4. DIVYANSHU GUPTA
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
