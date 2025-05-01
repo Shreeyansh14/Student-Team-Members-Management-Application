@@ -1,0 +1,97 @@
+/* Reset + base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+/* Container */
+.view-members-container {
+  padding: 3rem 2rem;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Member Card */
+.member-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  aspect-ratio: 1 / 1; /* makes it square */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.member-thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  margin-bottom: 1rem;
+}
+
+/* Name */
+.member-card h3 {
+  font-size: 1.25rem;
+  color: #222;
+  margin: 0.5rem 0 0.25rem;
+}
+
+/* Role */
+.member-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0.25rem 0 1rem;
+}
+
+/* Link */
+.details-link {
+  text-decoration: none;
+  color: #4e54c8;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.details-link:hover {
+  color: #6a7aff;
+}

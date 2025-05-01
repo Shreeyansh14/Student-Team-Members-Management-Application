@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './MemberDetailsPage.css'; // Import the CSS file
 
 export default function MemberDetailsPage() {
   const { id } = useParams();
@@ -12,11 +13,17 @@ export default function MemberDetailsPage() {
   }, [id]);
 
   return (
-    <div>
-      <img src={`http://localhost:5000/uploads/${member.image}`} width="200" alt="profile" />
-      <h2>{member.name}</h2>
-      <p>Role: {member.role}</p>
-      <p>Email: {member.email}</p>
+    <div className="member-page-container">
+      <div className="member-card">
+        <img
+          src={`http://localhost:5000/uploads/${member.image}`}
+          alt="Profile"
+          className="member-image"
+        />
+        <h2 className="member-name">{member.name}</h2>
+        <p className="member-info"><strong>Role:</strong> {member.role}</p>
+        <p className="member-info"><strong>Email:</strong> {member.email}</p>
+      </div>
     </div>
   );
 }
