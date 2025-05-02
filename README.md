@@ -1,77 +1,24 @@
-# Student Team Members Management Application
+# Student Team Member Detail Page
 
-A web-based application to manage student teams, built using Java, JDBC, and MySQL. This tool allows administrators to add, view, update, and delete student and team records in an organized manner, supporting seamless academic project management.
+This is a full-stack web application built using the **MERN stack (MongoDB, Express.js, React, Node.js)** that allows users to **add student team members** along with their **images** and **view the list of team members** on a separate page.
 
-## 🛠️ Features
+## Features
 
-- 🔐 Login system for admin access
-- 🧑‍🎓 Add, view, edit, and delete student records
-- 👥 Create and manage teams
-- 🔄 Assign students to teams
-- 📁 Database integration with MySQL using JDBC
-- 🖥️ Simple GUI built with Java Swing
+- ✅ Add a new team member with details (name, role, etc.)
+- 📸 Upload and display member images
+- 🧑‍🤝‍🧑 View all team members in a list/grid format
+- 📦 RESTful API built with Node.js and Express.js
+- 💾 MongoDB for storing team member details
+- ⚛️ React frontend for interactive UI
 
-## 🚀 Technologies Used
+## Tech Stack
 
-- Java (JDK 8+)
-- JDBC (Java Database Connectivity)
-- MySQL
-- Java Swing (for GUI)
-- NetBeans IDE (recommended)
+- **Frontend:** React
+- **Backend:** Node.js, Express.js, Multer (for image uploads)
+- **Database:** MongoDB with Mongoose ODM
 
-## 📦 Setup and Installation
+## Prerequisites
 
-### Prerequisites
+- Node.js & npm
+- MongoDB installed locally or a MongoDB Atlas URI
 
-- JDK 8 or later
-- MySQL Server
-- NetBeans IDE (or any Java IDE)
-- MySQL JDBC Driver
-
-### Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Shreeyansh14/Student-Team-Members-Management-Application.git
-   cd Student-Team-Members-Management-Application
-Create the MySQL Database
-
-Open MySQL and run the provided SQL script (if available), or create a database named student_team_db.
-
-Create necessary tables: students, teams, team_members.
-
-Update Database Credentials
-
-Open the DatabaseConnection.java file and update:
-
-java
-Copy
-Edit
-String url = "jdbc:mysql://localhost:3306/student_team_db";
-String user = "root";
-String password = "your_mysql_password";
-Run the Application
-
-Open the project in NetBeans and click Run to start the application.
-
-## 📁 Project Structure
-bash
-Copy
-Edit
-Student-Team-Members-Management-Application/
-│
-├── src/
-│   ├── database/               # Database connection and utilities
-│   ├── gui/                    # GUI classes (Login, Dashboard, etc.)
-│   ├── models/                 # Student and Team models
-│   └── Main.java               # Main entry point
-│
-└── README.md
-## 🤝 Contributors
-1. SHREEYANSH VERMA
-2. ANANT AGRAWAL
-3. ISHAN DEY
-4. DIVYANSHU GUPTA
-
-## 📄 License
-This project is licensed under the MIT License.
